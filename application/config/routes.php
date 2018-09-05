@@ -60,6 +60,7 @@ $route['unit'] = 'unit';
 
 
 $route['setting_list'] = 'index/setting_list';
+$route['down_json/(:any)'] = 'index/down_json/$1';
 $route['(:any)'] = 'index/view/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

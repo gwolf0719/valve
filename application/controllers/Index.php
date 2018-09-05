@@ -16,6 +16,44 @@ class Index extends CI_Controller {
         );
         $this->load->view('pages/_layout',$data);
     }
+    public function down_json($key){
+        $array["0"][] = array(
+            "start"=>'20180902',
+            "end"=>'20181010',
+            "max"=>'0',
+            "min"=>'0'
+        );
+        
+        $array["1"][] = array(
+            "start"=>'20180902',
+            "end"=>'20180908',
+            "max"=>'50',
+            "min"=>'40'
+        );
+        $array["1"][] = array(
+            "start"=>'20180909',
+            "end"=>'20180930',
+            "max"=>'40',
+            "min"=>'20'
+        );
+        $array["1"][] = array(
+            "start"=>'20181001',
+            "end"=>'20181005',
+            "max"=>'30',
+            "min"=>'10'
+        );
+
+        $array["2"][] = array(
+            "start"=>'20180902',
+            "end"=>'20181010',
+            "max"=>'100',
+            "min"=>'90'
+        );
+
+
+        header('Content-type:text/json');
+        echo json_encode($array[$key],JSON_UNESCAPED_UNICODE);
+    }
     
 
     function view($page = 'index') {
