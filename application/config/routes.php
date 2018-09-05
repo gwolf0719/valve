@@ -58,6 +58,8 @@ $route['admin/(:any)'] = 'admin/$1';
 $route['api/(:any)/(:any)'] = 'api/authenticate/$1/$2';
 $route['unit'] = 'unit';
 
+
+$route['setting_list'] = 'index/setting_list';
 $route['(:any)'] = 'index/view/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

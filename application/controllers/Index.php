@@ -10,6 +10,13 @@ class Index extends CI_Controller {
 	public function index() {
 		$this->load->view('welcome_message');
     }
+    public function setting_list(){
+        $data = array(
+            "path"=>"setting_list"
+        );
+        $this->load->view('pages/_layout',$data);
+    }
+    
 
     function view($page = 'index') {
         if (!file_exists('application/views/pages/'.$page.'.php')) show_404();
