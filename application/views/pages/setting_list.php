@@ -10,7 +10,7 @@
 $(function(){
     $("button").on("click",function(){
         // download('http://valve.foso.tw/down_json/'+$(this).attr('id'), $(this).attr('id')+'.json');
-        window.open('http://valve.foso.tw/down_json/'+$(this).attr('id'));
+        window.open('https://valve.foso.tw/down_json/'+$(this).attr('id'));
     })
 })
 </script>
